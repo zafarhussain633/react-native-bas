@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {Alert, Modal, StyleSheet, Text, Pressable, View,TextInput, Button} from 'react-native';
+import {Alert, Modal, StyleSheet, Text, Pressable,Image, View,TextInput, Button} from 'react-native';
+const icon = require("./../assets/images/cloudy.png")
 
 type propType = {
   onTextChange: any,
@@ -23,6 +24,7 @@ const AddGoal= ({onTextChange,enteredGoals,modalVisible,setModalVisible,handleGo
         }}>
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
+            <Image style={{width:40, height:30}} source={icon} />
           <TextInput
           style={styles.input}
           placeholder="enter your input"

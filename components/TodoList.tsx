@@ -34,6 +34,9 @@ function TodoList(): JSX.Element {
     setEnteredGoals(enetredText);
   };
 
+
+
+  console.log(enteredGoals,"enteredGoals")
   const handleGoalAdd = () => {
     setgoalList(currentGoals => [
       {text: enteredGoals, id: Math.random().toString()},
